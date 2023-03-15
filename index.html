@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Alarm Clock</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="clc-container">
+
+        <!-- logo -->
+        <i class="bi bi-alarm logo"></i>
+
+        <!-- current time -->
+        <h1 id="CrtTime">00:00:00 AM</h1>
+        <!-- Set alarm secction -->
+        <div>
+            <form action="" id="setTime">
+                <div class="inputTime">
+                    <input type="number" name="hr" placeholder="HH" max="23" min="00">
+                    <input type="number" name="min" placeholder="MM" max="59" min="00">
+                    <input type="number" name="sec" placeholder="SS" max="59" min="00">
+                </div>
+
+                <div class="Btns">
+                    <button type="submit" class="setAlrm btns"><i class="bi bi-alarm"></i></button>
+                    <button type="reset" class="stopAlarm btns" onclick="stpAlarm()"><i class="bi bi-stop-fill"></i></i></button>
+                </div>
+            </form>
+        </div>
+        <!-- next alarms -->
+        <h2>Upcoming Alarms</h2>
+        <div class="nxt-alarm">
+            <Ul id="nxt-alarm-list">
+                
+            </Ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
